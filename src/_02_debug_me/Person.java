@@ -2,27 +2,25 @@
 
 package _02_debug_me;
 
-class Person 
+import org.junit.Test;
+
+public class Person 
 { 
   // Instance variables 
     private String name; 
     private int age; 
-  
+    public Person() {}
   // Constructor 
-    public Person(String _name, int _age) 
-    { 
-        String name = _name; 
-        int age = _age; 
-    } 
 
+    @Test
   // Instance methods 
-    public String getName() 
+    public void getName() 
     { 
-        return name; 
+    	
     } 
-
-    public int getAge() 
+    @Test
+    public void getAge() 
     { 
-        return age; 
+
     } 
 } 

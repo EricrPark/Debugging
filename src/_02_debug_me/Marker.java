@@ -2,14 +2,18 @@
 
 package _02_debug_me;
 
-class Marker 
+import org.junit.Test;
+
+
+public class Marker 
 { 
+	int mark = 0;
     public Marker() 
     { 
         // no initialisation to do 
     } 
-
-    public void printGrade(int mark) 
+    @Test
+    public void printGrade() 
     { 
         if (mark >= 85) 
             System.out.println("High Distinction"); 
